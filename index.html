@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JULI Y LUCAS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="audiodiv">
+        <audio id="myAudio" preload="auto">
+            <source src="./elplandelamariposa.mp3" type="audio/mpeg">
+        </audio>
+        <div id="playPauseBtn" class="play">
+            <img src="./img/notamusical.png" alt="Icono de música">
+        </div>
+    </div>
+
+    <p data-aos="fade-up" class="titulocontador">Faltan:</p>
+    <div class="contador">
+        <div class="bloque">
+            <div data-aos="fade-up" id="dias" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">Días</div>
+        </div>
+        <div class="bloque">
+            <div data-aos="fade-up" id="horas" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">horas</div>
+        </div>
+        <div class="bloque">
+            <div data-aos="fade-up" id="minutos" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">minutos</div>
+        </div>
+        <div class="bloque">
+            <div data-aos="fade-up" id="segundos" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">segundos</div>
+        </div>
+    </div>
+
+    <div class="datos-ubicacion">
+        <div>
+            <img data-aos="fade-down" src="./img-editable/icono1.png" alt="">
+        </div>
+        <div class="datos">
+            <div>
+                <p data-aos="fade-up">18:30 Hs - Jano's Boutique Pilar</p>
+                <a data-aos="fade-up" class="boton" href="https://www.google.com/maps/dir//Jano's+Pilar+Boutique,+la+calle+Emilio+Casella+125,+Villa+Rosa+Ciudad+Aut%C3%B3noma+de+Buenos+Aires+AR,+B1631+Pilar,+Provincia+de+Buenos+Aires/@-34.407639,-58.8584251,715m/data=!3m1!1e3!4m17!1m7!3m6!1s0x95bc9d0c0c9efb97:0xadc21ffe83317c79!2sJano's+Pilar+Boutique!8m2!3d-34.407639!4d-58.8558502!16s%2Fg%2F11v663xcbd!4m8!1m0!1m5!1m1!1s0x95bc9d0c0c9efb97:0xadc21ffe83317c79!2m2!1d-58.8558345!2d-34.4076311!3e0?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D">CÓMO LLEGAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="novios">
+        <img src="./img-editable/fotos1.png" alt="">
+        <div class="icono2">
+            <img data-aos="fade-down" src="./img-editable/icono2.png" alt="">
+        </div>
+        <div class="icono3">
+            <img data-aos="fade-up" src="./img-editable/icono3.png" alt="">
+        </div>
+    </div>
+
+    <div class="timeline">
+        <p class="timeline-title">El gran día...</p>
+        <div class="iconos">
+            <div class="iconos-block">
+                <img data-aos="fade-up" src="./img-editable/tulugar.png" alt="icono">
+                <p data-aos="fade-up">18:30 Hs</p>
+                <P data-aos="fade-up" class="timing-text">Toma tu lugar</P>
+            </div>
+            <div class="iconos-block">
+                <img data-aos="fade-up" src="./img-editable/anillos.png" alt="icono">
+                <p data-aos="fade-up">19:00 Hs</p>
+                <P data-aos="fade-up" class="timing-text">Ceremonia</P>
+            </div>
+            <div class="iconos-block">
+                <img data-aos="fade-up" src="./img-editable/copas.png" alt="icono">
+                <p data-aos="fade-up">20:00 Hs</p>
+                <P data-aos="fade-up" class="timing-text">Recepción</P>
+            </div>
+            <div class="iconos-block">
+                <img data-aos="fade-up" src="./img-editable/cena.png" alt="icono">
+                <p data-aos="fade-up">21:30 Hs</p>
+                <P data-aos="fade-up" class="timing-text">Cena</P>
+            </div>
+            <div class="iconos-block">
+                <img data-aos="fade-up" src="./img-editable/fiesta.png" alt="icono">
+                <p data-aos="fade-up">23:00 Hs</p>
+                <P data-aos="fade-up" class="timing-text">Fiesta</P>
+            </div>
+            <div class="iconos-block">
+                <img data-aos="fade-up" src="./img-editable/vueltaacasa.png" alt="icono">
+                <p data-aos="fade-up">04:30 Hs</p>
+                <P data-aos="fade-up" class="timing-text">Vuelta a casa</P>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="accordion">
+        <h3 data-aos="fade-up">Antes de que nos consultes...</h3>
+
+        <div data-aos="fade-up" class="accordion-item">
+            <button class="accordion-header">¿CÓMO ME VISTO?</button>
+            <div class="accordion-content">
+                <p>QUEREMOS QUE TE SIENTAS CÓMODO/A Y CANCHERO/A, PERO TAMBIÉN QUE SE NOTE QUE ES UN DÍA ESPECIAL. 📸 LAS FOTOS VAN A QUEDAR PARA SIEMPRE, ASÍ QUE: ELEGANTE Y CON ONDA, PERO SIN ESTRÉS. NO OLVIDES QUE EL BLANCO ES DE LA NOVIA.🤍</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" class="accordion-item">
+            <button class="accordion-header">¿QUÉ LES REGALO?</button>
+            <div class="accordion-content">
+                <p>EL MEJOR REGALO ES QUE ESTÉS CON NOSOTROS, 🤍 PERO SI QUERÉS SUMAR UN MIMO A ESTA NUEVA ETAPA TE DEJAMOS NUESTROS DATOS</p>
+                <div class="gift-block">
+                    <div class="gift-box">
+                        <div class="boton2" data-copy="ESTOESUNEJEMPLO">COPIAR CBU</div>
+                    </div>
+                    <br>
+                    <div class="gift-box">
+                        <div class="boton2" data-copy="ESTOESUNEJEMPLO">COPIAR ALIAS</div>
+                    </div>
+                    <br>
+                    <p>Titular de la cuenta: Julieta Córdoba</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" class="accordion-item">
+            <button class="accordion-header">¿CÓMO VOY AL EVENTO?</button>
+            <div class="accordion-content">
+                <p>MUCHOS INVITADOS SE ORGANIZAN PARA IR Y/O VOLVER EN COMBI, EN CASO DE ESTAR INTERESADO COMUNICATE CON LOS NOVIOS.</p>
+            </div>
+        </div>
+
+      
+               <div data-aos="fade-up" class="accordion-item">
+            <button class="accordion-header">¿DÓNDE VIVIMOS EL MINUTO A MINUTO DE LA BODA?</button>
+            <div class="accordion-content">
+                <p>NO NOS QUEREMOS PERDER DE NADA, COMPARTI TUS FOTOS Y VIDEOS DE LA BODA, NO OLVIDES ETIQUETARNOS.</p>
+                   <br>  <a target="_blank" class="boton2" href="https://www.instagram.com/siquiero.arg/">@SIQUIERO.ARG</a>
+       <br> <br>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" class="accordion-item">
+            <button class="accordion-header">¿SI HAY BODA, HAY JODA?</button>
+            <div class="accordion-content">
+                <p>OBVIO! AYUDANOS A ARMARLA RECOMENDANDO LAS CANCIONES QUE NO PUEDEN FALTAR 🎶.</p>
+            <br>    <a target="_blank" class="boton2" href="https://open.spotify.com/playlist/7uBSyST8uuKg9vLhyYUh3K?si=cpygtUQAThiS8-cvfMyuOQ&utm_source=copy-link&pi=ZAkPupI5QwGst&pt=19eee480d9619337ad214841d03670e9">PLAYLIST</a>
+           <br> <br>
+            </div>
+        </div>
+
+        <div class="icono4">
+            <img data-aos="fade-down" src="./img-editable/icono4.png" alt="">
+        </div>
+        <div class="icono5">
+            <img data-aos="fade-up" src="./img-editable/icono5.png" alt="">
+        </div>
+    </div>
+
+    <div class="forms">
+
+        <form name="asistenciaform" method="POST" action="https://script.google.com/macros/s/AKfycbwgBnWsJ-2VCFMcM0Vx88NUh9jg0A-fMdQEIDmVo_vTUeucSg6BcRiReejZBNCMukzf/exec" class="formulario" id="asistenciaForm">
+
+            <label class="formtitle">Sólo faltas vos, Venís?</label>
+
+            <select name="NUMERO_PERSONAS" id="numeroPersonas" required>
+                <option value="" disabled selected>¿Cuántas personas van a confirmar?</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <div id="invitadosContainer"></div>
+
+            <button type="submit" class="boton">ENVIAR</button>
+        </form>
+
+        <script>
+        (function () {
+          var select = document.getElementById('numeroPersonas');
+          var container = document.getElementById('invitadosContainer');
+
+          function bloqueInvitado(n) {
+            var esPrimero = n === 1;
+            var titulo = esPrimero ? '' : '<label class="invitado-titulo">Invitado n.º ' + n + '</label>';
+            var extra = esPrimero
+              ? '<textarea name="CANCION_' + n + '" placeholder="Recomendale una canción al DJ 🎶"></textarea>'
+                + '<textarea name="MENSAJE_' + n + '" placeholder="Dejale un mensaje a los novios 🤍"></textarea>'
+              : '';
+
+            return ''
+              + '<div class="invitado-bloque" data-invitado="' + n + '">'
+              + titulo
+              + '<input type="text" name="NOMBRE_' + n + '" placeholder="Nombre" required />'
+              + '<input type="text" name="APELLIDO_' + n + '" placeholder="Apellido" required />'
+              + '<select name="ASISTENCIA_' + n + '" required>'
+              +   '<option value="" disabled selected>Asistís?</option>'
+              +   '<option value="Sí">Sí</option>'
+              +   '<option value="No">No</option>'
+              +   '<option value="Aún no lo decido">Aún no lo decido</option>'
+              + '</select>'
+              + '<select name="DIETA_' + n + '" required>'
+              +   '<option value="" disabled selected>¿Alguna dieta especial?</option>'
+              +   '<option value="Nada">Nada / Como de todo</option>'
+              +   '<option value="Vegetariano">Vegetariano</option>'
+              +   '<option value="Vegano">Vegano</option>'
+              +   '<option value="Celíaco">Celíaco</option>'
+              + '</select>'
+              + extra
+              + '</div>';
+          }
+
+          function render(cantidad) {
+            // Antes de redibujar, guarda lo que la persona ya haya completado
+            var guardados = {};
+            container.querySelectorAll('input, select, textarea').forEach(function (el) {
+              if (el.name) guardados[el.name] = el.value;
+            });
+
+            var html = '';
+            for (var i = 1; i <= cantidad; i++) html += bloqueInvitado(i);
+            container.innerHTML = html;
+
+            // Restaura los valores que ya estaban cargados
+            container.querySelectorAll('input, select, textarea').forEach(function (el) {
+              if (el.name && guardados[el.name] !== undefined) el.value = guardados[el.name];
+            });
+          }
+
+          select.addEventListener('change', function () {
+            render(parseInt(select.value, 10));
+          });
+
+          render(1); // el invitado 1 está siempre presente (mínimo 1 persona)
+        })();
+        </script>
+
+        <p data-aos="fade-up">RECORDÁ COMPLETAR EL <br> FORMULARIO ANTES DEL 05 DE NOVIEMBRE.</p>
+    </div>
+
+    <div class="novios">
+        <img src="./img-editable/fotos2.png" alt="">
+        <div class="icono6">
+            <img data-aos="fade-up" src="./img-editable/icono6.png" alt="">
+        </div>
+    </div>
+
+    <div class="end">
+        <img data-aos="fade-up" src="./img-editable/manosanillos.png" alt="">
+        <h2 data-aos="fade-up">Juli &amp; Lucas</h2>
+        <p data-aos="fade-down">Te esperamos</p>
+    </div>
+
+    <footer>
+        <div class="contenido">
+            <div>
+                <img src="./img/logosiquiero.png" alt="icono si quiero">
+                <p>Hecho con &hearts; <br>
+                &#169; <b>Si,quiero!</b> - invitaciones inteligentes.
+                <br> Todos los derechos reservados.</p>
+            </div>
+            <div class="contenido-list">
+                <ul>
+                    <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+                    <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Verificar: el nombre de archivo abajo tiene "countdwon" — si el archivo real
+         se llama "countdown.js" el contador no va a cargar. -->
+    <script src="./countdwon.js"></script>
+    <script src="./reproductor.js"></script>
+    <script src="./form.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+
+            // Reproduce el audio apenas la persona hace el primer scroll
+            var audio = document.getElementById('myAudio');
+            function playOnScroll() {
+                audio.play().catch(function (e) {
+                    console.warn('El navegador bloqueó la reproducción automática', e);
+                });
+                document.removeEventListener('scroll', playOnScroll);
+            }
+            document.addEventListener('scroll', playOnScroll);
+
+            // Acordeón de preguntas frecuentes (uno abierto a la vez)
+            var headers = document.querySelectorAll('.accordion-header');
+            headers.forEach(function (header) {
+                header.addEventListener('click', function () {
+                    var item = header.parentElement;
+                    var yaEstabaActivo = item.classList.contains('active');
+                    headers.forEach(function (otroHeader) {
+                        otroHeader.parentElement.classList.remove('active');
+                    });
+                    if (!yaEstabaActivo) item.classList.add('active');
+                });
+            });
+
+            // Copiar CBU / alias al portapapeles
+            document.querySelectorAll('[data-copy]').forEach(function (el) {
+                el.addEventListener('click', function () {
+                    copiarAlPortapapeles(el.getAttribute('data-copy'));
+                });
+            });
+        });
+
+        function copiarAlPortapapeles(texto) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(texto)
+                    .then(function () { alert('Copiaste "' + texto + '" a tu portapapeles'); })
+                    .catch(function () { copiarAlPortapapeleFallback(texto); });
+            } else {
+                copiarAlPortapapeleFallback(texto);
+            }
+        }
+
+        function copiarAlPortapapeleFallback(texto) {
+            var tempInput = document.createElement('input');
+            document.body.appendChild(tempInput);
+            tempInput.value = texto;
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Copiaste "' + texto + '" a tu portapapeles');
+        }
+    </script>
+
+</body>
+</html>
